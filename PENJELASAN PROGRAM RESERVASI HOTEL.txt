@@ -1,0 +1,55 @@
+JUDUL PROGRAM “RESERVASI HOTEL”
+Program ini adalah sistem “Reservasi Hotel” menggunakan Bahasa pemrograman Java yang dibuat untuk mensimulasikan proses pemesanan kamar hotel,
+yang meliputi pencarian kamar, pemesanan berdasarkan durasi menginap, pemberian diskon, serta sistem pembayaran.
+
+Penjelasan program :
+1.Data Kamar Tersedia dalam Sistem
+  Program ini menggunakan Array untuk menyimpan daftar kamar yang tersedia, lengkap dengan :
+  - Tipe kamar (Deluxe, Superior, Standard, Grand Suite, dan Suite).
+  - Harga kamar per malam.
+  - Status ketersediaan (tersedia atau sudah dipesan).
+  Ini memungkinkan sistem untuk melacak kamar mana yang masih bisa dipesan dan mana yang sudah dipesan.
+
+2.Menampilkan Daftar Kamar
+  Saat pengguna memilih fitur 1 (Tampilkan Kamar), maka program akan :
+  - Menampilkan semua kamar hotel, termasuk informasi tipe, harga, dan status ketersediannya.
+  - Jika kamar belum dipesan, maka statusnya “Tersedia”.
+  - Jika kamar sudah dipesan, maka statusnya “Dipesan”.
+  Fitur ini memungkinkan pelanggan untuk melihat daftar kamar yang bisa mereka pilih sebelum melakukan reservasi.
+
+3.Pemesanan Kamar dengan Validasi
+  Jika pengguna memilih fitur 2 (Pesan Kamar), maka program akan :
+  - Sistem akan meminta memasukkan nama pelanggan.
+  - Sistem akan meminta pelanggan memasukkan tiper kamar yang diinginkan/dipesan.
+  - Sistem akan mencari apakah kamar tersebut tersedia. Jika Tersedia, pelanggan dapat melanjutkan ke tahap berikutnya.
+    Jika Tidak Tersedia, pelanggan akan diberi tahu bahwa kamar tersebut tidak bisa dipesan.
+  Fitur ini mencegah pelanggan memesan kamar yang sudah dipesan oleh orang lain, sehingga tidak terjadi kesalahan dalam reservasi.
+
+4.Menentukan Durasi Menginap dan Penerapan Diskon
+  - Setelah kamar ditemukan, pelanggan harus memasukkan jumlah malam yang ingin dipesan.
+  - Sistem kemudian menghitung total biaya berdasarkan harga per malam.
+  - Jika pelanggan menginap minimal 3 malam, maka mereka akan mendapatkan diskon sebesar 10%.
+  Fitur ini mensimulasikan sistem promo atau diskon seperti hotel di dunia nyata, yang sering memberikan potongan harga untuk pemesanan lebih lama.
+
+5. Proses Pembayaran
+   - Setelah total biaya dihitung, pelanggan harus memasukkan jumlah uang untuk membayar.
+   - Sistem akan mengecek apakah uang pelanggan cukup. Jika cukup, transaksi berhasil dan kamar dianggap telah dipesan. 
+     Jika tidak cukup, maka transaksi       akan dibatalkan. Jika uang lebih, maka sistem akan menampilkan jumlah kembaliannya.
+   Fitur ini mensimulasikan proses transaksi pembayaran, termasuk pengecekan kecukupan dana pelanggan.
+
+6. Pencarian Kamar
+   Jika pelanggan memilih fitur 3 (Cari Kamar), maka program akan :
+   - Dapat memasukkan tipe kamar yang ingin dicari.
+   - Sistem akan menampilkan informasi kamar jika ditemukan.
+   Fitur ini mempermudah dalam mencari tipe kamar tertentu tanpa harus melihat seluruh daftar kamar.
+
+7. Pengurutan Kamar Berdasarkan Harga (termurah ke termahal)
+   Jika pelanggan memilih fitur 4 (Urutkan Kamar), maka program akan :
+   - Mengurutkan kamar berdasarkan dari yang termurah sampai yang termahal menggunakan sorting.
+   - Setelah diurutkan, daftar kamar akan ditampilkan kembali.
+   Fitur ini membantu untuk memilih kamar berdasarkan harga dari yang termurah sampai yang termahal.
+
+8. Keluar dari Program
+   Jika pelanggan memilih fitur 5 (Keluar), maka program akan menampilkan pesan “Terima kasih telah menggunakan layanan kami !”. 
+   Program akan terus berjalan hingga pelanggan memilih fitur keluar, memastikan bahwa mereka dapat melakukan beberapa transaksi
+   tanpa harus membuka kembali program dari awal.
